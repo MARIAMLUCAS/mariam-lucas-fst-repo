@@ -1,0 +1,232 @@
+body{
+  font: 15px/1.5 Arial, Helvetica, sans-serif ;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+/* global */
+.container{
+  width:80%;
+  margin: auto;
+  overflow: hidden;
+}
+.btn-1{
+  height: 40px;
+  background-color:  #323640;
+  color:white;
+  font-size: 17px;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.btn-2{
+  height: 40px;
+  background-color:  rgb(68, 235, 210);
+  color:#323640;
+  font-size: 17px;
+  font-weight: bold;
+  border: 0;
+  width: 50%;
+  margin: auto;
+  margin-top: 10px;
+  
+}
+
+.dark{
+  padding: 15px;
+  background-color: #323640;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* header */
+header{
+  background: #323640;
+  color: white;
+  padding-top: 30px;
+  min-height: 60px;
+  border-bottom: rgb(68, 235, 210) 3px solid;
+}
+header a{
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+header ul{
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+ header li{
+   display: inline;
+   padding: 0 20px;
+ }
+ header #branding{
+   float: left;
+ }
+ header #branding h1{
+   margin: 0;
+ }
+ header nav{
+   float:right;
+   margin-top:10px;
+ }
+ header .highlight, header .current a{
+   color:rgb(80, 252, 226);
+   font-weight: bold;
+ }
+ header a:hover{
+   color: #8dffec;
+   font-size: 17px;
+   text-shadow: 1px 2px 5px #ffffff;
+ }
+ /* Showcase */
+ #showcase{
+   min-height: 80vh;
+   background:url('https://techcrunch.com/wp-content/uploads/2019/04/1024x683-header-TSG.jpeg') no-repeat ;
+   background-size:cover;
+   text-align: center;
+   color: rgb(189, 251, 242);
+ }
+ #showcase h1{
+   margin-top: 100px;
+   font-size: 50px;
+   margin-bottom: 50px;
+ }
+ #showcase p{
+   font-size: 20px;
+ }
+ /* newsletter */
+ #newsletter{
+   padding: 15px;
+   color:#2e3037;
+   background:rgb(68, 235, 210);
+ }
+ #newsletter h1{
+   float: left;
+ }
+ #newsletter form{
+  float: right;
+  margin-top: 15px;
+} 
+#newsletter input[type="email"]{
+  padding-inline-end: 4px;
+  height: 30px;
+  width: 250px;
+} 
+
+/* boxes */
+#boxes .container{
+  display: flex;
+  justify-content: space-around;
+  margin: 5% auto;
+}
+
+#boxes .box{
+  text-align: center;
+  color:  #2e3037;
+  width: 30%;
+  padding: 10px;
+}
+#boxes .box img{
+  width:100px;
+}
+
+ /* Sidbar */
+aside#sidebar{
+  float: right;
+  width: 30%;
+  margin-top: 80px;
+}
+aside#sidebar .qoute input, aside#sidebar .qoute textarea{
+width: 90%;
+padding: 5px;
+}
+
+
+#sidebar h3{
+ font-size: 20px;
+}
+
+
+/* Main-col */
+article#main-col{
+  float: left;
+  width: 65%;
+}
+
+#main-col h1{
+  font-size: 25px;
+  font-weight: bold;
+  color:#323640 ;
+  text-align: center;
+}
+
+/* Services */
+ul#services li{
+  list-style: none;
+  padding: 20px;
+  border:#a6cbc5 solid 1px;
+  margin-bottom: 5px;
+  background-color: #e6e6e6;
+}
+
+footer{
+  padding: 20px;
+  margin-top: 20px;
+  color: white;
+  background-color: #323640;
+  text-align: center;
+}
+
+
+/* Media Queries */
+@media(max-width: 768px) {
+ header #branding,
+ header nav,
+ header nav li,
+ #newsletter h1,
+ #newsletter form,
+ article#main-col,
+ aside#sidebar{
+   float: none;
+   text-align: center;
+   width: 100%;
+ } 
+
+ header{
+   padding-bottom: 20px;
+ }
+
+ #showcase h1{
+   margin-top: 40px;
+ }
+  
+ #newsletter button{
+   display: block;
+   width:100%;
+   margin: 5px auto;
+ }
+ #newsletter form input[type="email"]{
+   width: 100%;
+ } 
+
+ #boxes .container{
+  display: grid;
+  grid-template-rows: 1fr;
+}
+#boxes .box{
+  width: 100%;
+}
+
+}
+
+
+
+
+
+
