@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Amita&family=Kalam&family=Lobster&family=Lora:ital@1&family=Merienda&family=Merienda+One&family=Playfair+Display:ital,wght@0,500;0,600;1,400;1,500&family=Roboto:ital,wght@0,400;1,100&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: bold;
+}
+
+:root {
+  --primary-color: rgb(255, 241, 241);
+  --secondary-color: rgb(78, 1, 26);
+}
+
+.dark-theme {
+  --primary-color: rgb(78, 1, 26);
+  --secondary-color: rgb(255, 241, 241);
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url('images/img1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form-box { 
+  width: 350px;
+  height: 480px;
+  position: relative;
+  top: 20%;
+  margin: auto;
+  background: var(--primary-color);
+  padding: 5px;
+  overflow: hidden;
+  /* background: rgb(31, 24, 24); */
+}
+
+.button-box {
+  width: 220px;
+  margin: 35px auto;
+  position: relative;
+  box-shadow: 0 0 20px 9px #fd2d561f;
+  border-radius: 30px;
+}
+
+.toggle-btn {
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+}
+
+.btn{
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  background: linear-gradient(90deg, #ff105f, #ffe2a8);
+  border-radius: 30px;
+  transition: .5s;
+}
+
+.social-icons {
+  display: flex;
+  margin: 7% 30%;
+  gap: 5%;
+  align-items: center;
+}
+
+.social-icons img {
+  width: 40px;
+}
+
+#moon-icon {
+  width: 40px;
+  position: relative;
+  top: 255px;
+  left: 150px;
+  cursor: pointer;
+}
+
+.input-group {
+  top: 180px;
+  position: absolute;
+  width: 280px;
+  transition: .5s;
+  /* margin-left: 20px; */
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #9f4052;
+  background: transparent;
+  outline: none;
+}
+
+::placeholder ,span, .toggle-btn, .btn, .submit-btn  {
+  color: var(--secondary-color);
+  opacity: 1; 
+}
+
+.submit-btn {
+  width: 85%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background: linear-gradient(90deg, #ff105f, #ffe2a8);
+  border: 0;
+  border-radius: 30px;
+  outline: none;
+}
+
+.check-box {
+  margin: 30px 10px 30px 5px;
+}
+
+span {
+  font-size: 12px;
+  bottom: 68px;
+  position: absolute;
+}
+
+#login {
+  left: 30px;
+}
+
+#register {
+  left: 430px;
+}

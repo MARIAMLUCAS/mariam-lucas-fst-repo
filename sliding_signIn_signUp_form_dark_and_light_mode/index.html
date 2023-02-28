@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>register logIn form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hero">
+    <div class="form-box">
+      <div class="button-box">
+      <div id="b" class="btn"></div>
+      <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+      <button type="button" class="toggle-btn" onclick="register()">Register</button>
+    </div>
+    <div class="social-icons">
+      <img src="images/facebook.png">
+      <img src="images/twitter.png">
+      <img src="images/google.png">
+    </div>
+    <form id="login" class="input-group">
+      <input type="text" class="input-field" placeholder="User Id" required>
+      <input type="password" class="input-field" placeholder="Enter Password" required>
+      <input type="checkbox" class="check-box"><span>Remember Password</span>
+      <button type="submit" class="submit-btn">Log in</button>
+    </form>
+    <form id="register" class="input-group">
+      <input type="text" class="input-field" placeholder="User Id" required>
+      <input type="email" class="input-field" placeholder="Email Id" required>
+      <input type="password" class="input-field" placeholder="Enter Password" required>
+      <input type="checkbox" class="check-box"><span>I Agree To The Terms & Conditios</span>
+      <button type="submit" class="submit-btn">Register</button>
+    </form>
+    <img id="moon-icon" src="images/moon.png">
+    </div>
+  </div>
+
+  <script>
+    var x = document.getElementById('login');
+    var y = document.getElementById('register');
+    var z = document.getElementById('b');
+    var icon = document.getElementById('moon-icon');
+
+    function register() {
+      x.style.left = '-400px';
+      y.style.left = '30px';
+      z.style.left = '110px';
+      z.style.background = 'linear-gradient(90deg, #ffe2a8,#ff105f)';
+    }
+
+    function login() {
+      x.style.left = '30px';
+      y.style.left = '430px';
+      z.style.left = '0';
+      z.style.background = 'linear-gradient(90deg,#ff105f, #ffe2a8)';
+    }
+
+    icon.onclick = function(){
+    document.body.classList.toggle('dark-theme');
+    if(document.body.classList.contains('dark-theme')){
+      icon.src = 'images/sun.png';
+    } else{
+      icon.src = 'images/moon.png';
+    }
+    }
+    
+  </script>
+</body>
+</html>
